@@ -2,7 +2,7 @@
 # @Author: bishal
 # @Date:   2017-01-11 11:15:52
 # @Last Modified by:   rebatov
-# @Last Modified time: 2017-01-11 20:26:20
+# @Last Modified time: 2017-01-11 20:40:54
 import gi
 import os
 import signal
@@ -25,9 +25,6 @@ with open('data.json') as json_data:
 
 
 headers = {'content-type': 'application/json'}
-# url ='http://hrm.javra.com/user/login'
-url = "http://xepst.javra.com/cgi-bin/wspd_cgi102b.sh/WService=xePST-prod-web/js/jsread.p?call=emptodayinfo"
-
 def main():
 	print JSON["username"]
 	driver.get('http://hrm.javra.com/login')
